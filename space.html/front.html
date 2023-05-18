@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<style>
+    .w3-bar-item{
+      color: white;
+        background-image: url(https://i.pinimg.com/474x/40/49/93/4049930d83f9268a314c3770d693e3b7.jpg);
+    }
+</style>
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="index2.html" class="w3-bar-item w3-button">Home</a>
+  <a href="nasa1.html" class="w3-bar-item w3-button">History</a>
+  <a href="firstnasamission.html" class="w3-bar-item w3-button">Mission
+  </a>
+</div>
+<style>
+    .w3-container{
+       background-color: black;
+    }
+    .w3-teal, .w3-hover-teal:hover {
+    color: #fff!important;
+    background-color: #1b0096!important;
+}
+.img{
+    width: 34px;
+}
+</style>
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1><b>SPACE EXPLORATION</b></h1>
+  </div>
+</div>
+
+<img class="img" src="" alt="" style="width:100%">
+
+<div class="w3-container">
+<p>This sidebar is hidden by default, (style="display:none")</p>
+<p>You must click on the "hamburger" icon (top left) to open it.</p>
+<p>The sidebar will hide a part of the page content.</p>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html> 

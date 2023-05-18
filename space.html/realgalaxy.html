@@ -1,0 +1,83 @@
+<!--<img class="ing_1" src="https://i.pinimg.com/474x/cb/96/b2/cb96b236ba8c3050895693c992f00a48.jpg">
+<img class="ing_2" src="https://i.pinimg.com/564x/1b/b1/cc/1bb1cc6fe006c00a45057949e76ee184.jpg">
+<img  class="ing_4"src="https://i.pinimg.com/564x/04/a5/fd/04a5fd259b6cb8fb0ffc052c69077b94.jpg">
+-->
+
+
+
+
+
+<div class="container">
+  <img class="dada"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Messier51_sRGB.jpg/1024px-Messier51_sRGB.jpg "
+    alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">The Whirlpool Galaxy</div>
+  </div>
+</div>
+<!---<div class="container_2">
+    <img class="daka"src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UGC_10214HST.jpg/800px-UGC_10214HST.jpg"alt="Avatart" class="image_2">
+    <div class="overlayt">
+        <div class="textt">The Whirlpool Galaxy</div>-->
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .dada {
+    height: 4cm;
+    width: 5cm;
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(29, 199, 176);
+    background: rgba(44, 44, 44, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 63%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    height: 146px;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+</style>
+</head>
+
+<body>
+  <button id="sakshiButton" class="float-left submit-button">The whirepool galaxy</button>
+
+  <script type="text/javascript">
+    document.getElementById("sakshiButton").onclick = function () {
+      location.href = "galaxy1.html";
+    };
+  </script>
+  <style>
+    #sakshiButton{
+      background-color: black;
+    color: white;
+    width: 188px;
+    margin-top: 4px;
+    }
+  </style>
